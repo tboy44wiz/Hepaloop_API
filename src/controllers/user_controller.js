@@ -77,6 +77,7 @@ class UsersController {
     static loginUser = async (req, res) => {
         try {
             const requestBody = req.body;
+            console.log(requestBody);
 
             //  Validate the Request Body.
             const { error, value } = JoiValidator.usersLoginSchema.validate(requestBody);

@@ -45,7 +45,7 @@ const userAvatarUpload = (req, res, next) => {
         if(error) {
             const response = new Response(
                 false,
-                600,
+                400,
                 (error.message) ? `Error: ${error.message}` : error
             );
             return res.status(response.code).json(response);
